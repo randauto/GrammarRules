@@ -1,0 +1,15 @@
+<resources>
+
+    <color name="green">#50B948</color>
+    <color name="blue">#4F4FEA</color>
+    <color name="red">#F73D5F</color>
+    <color name="orange">#F69821</color>
+    
+    <color name="basic">#59bebd</color>
+    <color name="basic_p">#43a2a1</color>
+    <color name="intermediate">#35b4e5</color>
+    <color name="intermediate_p">#2b9dc9</color>
+    <color name="advanced">#f39219</color>
+    <color name="advanced_p">#cf8223</color>
+
+</resources>
