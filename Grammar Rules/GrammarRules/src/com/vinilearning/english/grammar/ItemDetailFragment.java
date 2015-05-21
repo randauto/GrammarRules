@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.TextView;
 
 import com.vinilearning.english.grammar.bean.GrammarRule;
@@ -73,6 +74,9 @@ public class ItemDetailFragment extends Fragment {
 		if (mItem != null) {
 			((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem
 					.getTitle());
+			WebView webView = (WebView)rootView.findViewById(R.id.webView);
+			webView.getSettings().setUseWideViewPort(true);
+			webView.loadUrl("file:///android_assets/web/" + mItem.getPathFile());
 		}
 
 		return rootView;

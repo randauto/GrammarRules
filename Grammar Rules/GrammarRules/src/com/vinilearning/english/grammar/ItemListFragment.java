@@ -167,6 +167,11 @@ public class ItemListFragment extends ListFragment {
 			if (!TextUtils.isEmpty(description)) {
 				item.setDescription(jo_inside.getString("description"));
 			}
+			
+			String pathFile = jo_inside.getString("link");
+			if(!TextUtils.isEmpty(pathFile)){
+				item.setPathFile(pathFile);
+			}
 
 			if (titleText.equals("Basic English")) {
 				GrammarApplication.arrGrammarBasic.add(item);
